@@ -1,7 +1,7 @@
 {
-  "name": "pp-front",
+  "name": "nuxt-element-apollo",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "Nuxt boilerplate with Element (custom theme) and Vue Apollo",
   "author": "João Cavalcante <contato@kavalcante.com>",
   "private": true,
   "dependencies": {
@@ -23,7 +23,6 @@
     "element-theme-chalk": "^2.4.4",
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-config-standard": "^6.2.1",
     "eslint-loader": "^1.6.1",
     "eslint-plugin-html": "^2.0.0",
     "eslint-plugin-import": "^2.13.0",
