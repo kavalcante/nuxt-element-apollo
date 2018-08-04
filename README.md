@@ -15,6 +15,15 @@
 # install dependencies
 $ npm install # Or yarn install
 
+# install Element CLI Theme Tool
+$ npm install element-theme -g
+
+# change element-variables.scss file with the colors of your project and then
+$ et
+
+# after theme is build, import the custom theme at
+# ~/plugins/element-ui.js
+
 # serve with hot reload at localhost:3000
 # service worker is disabled in dev
 $ npm run dev

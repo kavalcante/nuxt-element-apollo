@@ -38,7 +38,9 @@ module.exports = {
           selector: to.hash,
           offset: { x: 0, y: 10 },
         };
-      } else if (savedPosition) {
+      }
+
+      if (savedPosition) {
         return savedPosition;
       }
 
