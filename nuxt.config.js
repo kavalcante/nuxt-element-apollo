@@ -13,29 +13,19 @@ module.exports = {
         });
       }
     },
-
-    babel: {
-      presets({ isServer }) {
-        if (isServer) return null; // Use default
-        return [
-          ['vue-app', {
-            targets: {
-              chrome: 40,
-              edge: 9,
-              firefox: 40,
-              ie: 9,
-              safari: 7,
-            },
-          }],
-        ];
-      },
-    },
   },
   /*
   ** Headers
   ** Common headers are already provided by @nuxtjs/pwa preset
   */
-  head: {},
+  head: {
+    title: 'Nuxt Element Apollo Boilerplate',
+  },
+
+  css: [
+    'element-ui/lib/theme-chalk/display.css',
+  ],
+
 
   plugins: [
     { src: './plugins/element-ui.js' },
@@ -63,7 +53,7 @@ module.exports = {
   ** Customize app manifest
   */
   manifest: {
-    theme_color: '#3B8070'
+    theme_color: '#3B8070',
   },
   /*
   ** Modules
@@ -75,7 +65,10 @@ module.exports = {
 
   apollo: {
     clientConfigs: {
-      default: '~/apollo/client-configs/default.js',
+      default: {
+        // required
+        httpEndpoint: 'http://localhost:4000',
+      },
     },
   },
-}
+};
